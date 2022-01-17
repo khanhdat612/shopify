@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./asset/css/style.css">
     <link rel="stylesheet" href="./asset/css/responsive.css">
+    <link rel="stylesheet" href="./asset/javascript/main.js">
     <title>shopify</title>
 </head>
 <body>
@@ -39,7 +40,7 @@
                 <div class="baner_product">
                 </div>
                 <div class="baner_img">
-                    <img src="./asset/img/banner.png" alt="">
+                    <img class="baner_img-respon" src="./asset/img/banner.png" alt="">
                 </div>
                 
                 <div class="baner_shopify">
@@ -81,7 +82,8 @@
                 </div>
 
                 <div class="img_operate">
-                    <img src="./asset/img/banner2.png" alt=""> 
+                    <img class="operate-img" src="./asset/img/banner2.png" alt="">
+                    <img class="operate-img2" src="./asset/img/photo-1454165804606-c3d57bc86b40.jpg" alt="">
                 </div>
 
             </div>
@@ -91,11 +93,28 @@
 
             <div id="review" class="review">
                 <div class="title_review">
-                    <h2 class="title_review-total" >Tham gia cùng hơn 1.700.000 con người đầy hoài bão đã bán hàng được hơn 200 tỷ đô la qua Shopify</h2>
+                    <h2 class="title_review-total" >Tham gia cùng hơn 1.700.000 con người đầy hoài bão <br> đã bán hàng được hơn 200 tỷ đô la qua Shopify</h2>
                     <p class="sub_review">Các cơ sở kinh doanh lớn nhỏ chọn bán hàng trên Shopify vì Shopify dễ thiết lập, có nhiều tính năng vượt trội và là nền tảng đi đầu lĩnh vực TMĐT trong việc hỗ trợ bạn phát triển doanh nghiệp.</p>
                 </div>
 
-                <div class="review_user-oberlo">
+                <div class="review-container">
+                    <div class="cont-user reviwe-container-user1">
+                        <img class="img-user" src="./asset/img/start.png" alt="">
+                        <p class="title-user">Nếu bạn sử dụng Oberlo trong thời gian dài, sẽ đến lúc bạn nhận được 50 hoặc 100 đơn hàng mỗi ngày.</p>
+                        <img class="img-user1" src="./asset/img/user1.jpg" alt="">
+                    </div>
+                    <div class="cont-user reviwe-container-user2">
+                        <img class="img-user" src="./asset/img/start.png" alt="">
+                        <p class="title-user">Đây là lần đầu tiên tôi làm chủ cửa hàng. Nếu không có ứng dụng này, tôi sẽ không tài nào mở cửa hàng được.</p>
+                        <img class="img-user1" src="./asset/img/user2.jpg" alt="">
+                    </div>
+                    <div class="cont-user reviwe-container-user3">
+                        <img class="img-user" src="./asset/img/start.png" alt="">
+                        <p class="title-user">Nếu đang xử lý số lượng đơn hàng lớn trên cửa hàng bán hàng trung gian, bạn rất nên sử dụng Oberlo. Ứng dụng này đã giúp tôi thoải mái hơn nhiều.</p>
+                        <img class="img-user1 cont-user3" src="./asset/img/user3.jpg" alt="">
+                    </div>
+                </div>
+                <!-- <div class="review_user-oberlo">
                     <div class="review-user1">
                         <img class="star_img" src="./asset/img/start.png" alt="">
                         <p class="star-user1">Nếu bạn sử dụng Oberlo trong thời gian dài, sẽ đến lúc bạn nhận được 50 hoặc 100 đơn hàng mỗi ngày.</p>
@@ -105,10 +124,10 @@
                         <p class="star-user1">Đây là lần đầu tiên tôi làm chủ cửa hàng. Nếu không có ứng dụng này, tôi sẽ không tài nào mở cửa hàng được.</p>
                     </div>
                     <div class="review_user3 review-user1">
-                        <img class="star_img" src="./asset/img/start.png" alt="">
+                        <img class="star_img star_img3" src="./asset/img/start.png" alt="">
                         <p class="star-user1">Nếu đang xử lý số lượng đơn hàng lớn trên cửa hàng bán hàng trung gian, bạn rất nên sử dụng Oberlo. Ứng dụng này đã giúp tôi thoải mái hơn nhiều.</p>
                     </div>
-                </div>
+                </div> -->
 
             </div>
 
@@ -117,38 +136,44 @@
 
             <div id="marketing" class="marketing">
                 <div class="operate">
-                    <div class="menu_oberlo">
-                        <div class="title_oberlo">
-                            <h2 class="title_oberlo-h2">Kinh doanh thành công hơn cùng Oberlo</h2>
-                            <p class="sub_oberlo" >Hàng trăm thương nhân thành công trên Shopify đang quản lý cửa hàng của họ bằng Oberlo</p>
-                        </div>
-                        <div class="list_menu">
-                            <div class="list_menu-oberlo1">
-                                <h3 class="title_oberlo1 maketing_menu-list2">Tập trung vào khâu tiếp thị</h3>
-                                <p class="sub_oberlo1 maketing_menu-list2">Khi không còn phải vận chuyển hay đóng gói đơn hàng, bạn sẽ có nhiều thời gian hơn để tập trung vào hoạt động tiếp thị và xây dựng doanh nghiệp.</p>
-                            </div>
-                            <div class="list_menu-oberlo1">
-                                <h3 class="title_oberlo1 maketing_menu-list">Mở rộng danh mục sản phẩm</h3>
-                                <p class="sub_oberlo1 maketing_menu-list">Thêm nhiều sản phẩm khác để đáp ứng chính xác nhu cầu của khách hàng. Nếu bán giày, sao bạn không bán luôn cả tất?</p>
-                            </div>
-                            
-                        </div>
-                       
-                        <div class="list_menu2">
-                            <div class="list_menu-oberlo1">
-                                <h3 class="title_oberlo1 maketing_menu-list2">Thêm nhiều tài khoản</h3>
-                                <p class="sub_oberlo1 maketing_menu-list2">Oberlo sẽ phát triển cùng doanh nghiệp bạn. Bạn có thể thêm nhiều tài khoản khi bắt đầu phát triển đội ngũ và tuyển dụng nhân viên.</p>
-                            </div>
-                            <div class="list_menu-oberlo1 marketing_menu">
-                                <h3 class="title_oberlo1 title_oberlo1-wrap">Xây dựng mối quan hệ với đơn vị cung ứng</h3>
-                                <p class="sub_oberlo1 sub_oberlo1-wrap">Bạn sẽ có thể trực tiếp trao đổi với đơn vị cung ứng để đảm bảo mang đến cho khách hàng trải nghiệm chất lượng nhất.</p>
+                    <div class="markeing-operate">
+                        <div class="menu_oberlo">
+                            <div class="title_oberlo">
+                                <h2 class="title_oberlo-h2">Kinh doanh thành công hơn cùng Oberlo</h2>
+                                <p class="sub_oberlo" >Hàng trăm thương nhân thành công trên Shopify đang quản lý cửa hàng của họ bằng Oberlo</p>
                             </div>
                         </div>
+
+                        <div class="operate-market">
+                            <div class="menu-oberlo-list1">
+                                <div class="list1_oberla">
+                                    <h3 class="title-list1">Tập trung vào khâu tiếp thị</h3>
+                                    <p class="sub-title-list1">Khi không còn phải vận chuyển hay đóng gói đơn hàng, bạn sẽ có nhiều thời gian hơn để tập trung vào hoạt động tiếp thị và xây dựng doanh nghiệp.</p>
+                                </div> 
+                                <div class="list_oberla1">
+                                    <h3 class="title-list1">Mở rộng danh mục sản phẩm</h3>
+                                    <p class="sub-title-list1">Thêm nhiều sản phẩm khác để đáp ứng chính xác nhu cầu của khách hàng. Nếu bán giày, sao bạn không bán luôn cả tất?</p>
+                                </div>
+                            </div>
+
+                            <div class="menu-oberlo-list1">
+                                <div class="list1_oberla">
+                                    <h3 class="title-list2">Thêm nhiều tài khoản</h3>
+                                    <p class="sub-title-list2">Oberlo sẽ phát triển cùng doanh nghiệp bạn. Bạn có thể thêm nhiều tài khoản khi bắt đầu phát triển đội ngũ và tuyển dụng nhân viên.</p>
+                                </div> 
+                                <div class="list_oberla2">
+                                    <h3 class="title-list2 title-list-sub">Xây dựng mối quan hệ với đơn vị cung ứng</h3>
+                                    <p class="sub-title-list2 style-list2">Bạn sẽ có thể trực tiếp trao đổi với đơn vị cung ứng để đảm bảo mang đến cho khách hàng trải nghiệm chất lượng nhất.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="img_operate">
+                            <img class="img_operate-size" src="./asset/img/baner3.jpg" alt=""> 
+                        </div>
+
                     </div>
     
-                    <div class="img_operate">
-                        <img class="img_operate-size" src="./asset/img/baner3.jpg" alt=""> 
-                    </div>
                 </div>
             </div>
 

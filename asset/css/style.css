@@ -10,7 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 #app {
-  width: 100%;
+  overflow: hidden;
 }
 
 #header {
@@ -81,13 +81,14 @@ html {
   transition: 0.3s ease-out;
 }
 #container {
+  /* width: 100%; */
   padding-top: 81px;
 }
 .baner_product::before {
   content: "";
   position: absolute;
   background-color: #90dfd6;
-  width: 500px;
+  width: 50%;
   top: 0;
   bottom: 0;
 }
@@ -141,6 +142,7 @@ html {
 }
 
 .operate {
+  min-height: 900px;
   display: flex;
   width: 100%;
 }
@@ -173,11 +175,12 @@ html {
 
 .list_menu2 .title_oberlo1-wrap,
 .sub_oberlo1-wrap {
-  margin-left: 5px;
+  /* margin-left: 5px; */
   word-break: keep-all;
 }
 .list_menu2 .list_menu-oberlo1 {
-  margin-left: 18px;
+  padding: 0 18px;
+  width: 100%;
 }
 
 .operate .img_operate {
@@ -219,11 +222,12 @@ html {
 
 .title_oberlo1.title_oberlo1-wrap,
 .sub_oberlo1-wrap {
-  padding-left: 75px;
+  /* padding-left: 75px; */
+  /* width: 100%; */
 }
 
 #container .operate {
-  height: 760px;
+  min-height: 800px;
 }
 .list_menu,
 .list_menu2 {
@@ -232,10 +236,11 @@ html {
 
 .review {
   background-image: url(/asset/img/backgroubd.jpg);
-  height: 948px;
+  height: 848px;
   border-bottom: 1px solid #d2d5d9;
   background-size: cover;
   position: relative;
+  z-index: -2;
 }
 .review .title_review {
   padding-top: 96px;
@@ -260,9 +265,8 @@ html {
   word-break: break-word;
   line-height: 1.4;
 }
-.review-user1 {
+/* .review-user1 {
   margin-top: 100px;
-  /* margin-left: 85px; */
   background-color: #ffffff;
   width: 380px;
   height: 260px;
@@ -303,6 +307,7 @@ html {
   position: absolute;
   border-radius: 50%;
   margin-left: 190px;
+  margin-top: 7px;
   transform: translateX(-50%);
 }
 
@@ -362,28 +367,117 @@ html {
 .review_user-oberlo {
   display: flex;
   justify-content: center;
-}
-.review_user-oberlo .review-user1 {
-  /* padding-right: 18px; */
+  flex-wrap: wrap;
 }
 
 .review_user-oberlo .review_user2 {
-  margin-top: 225px;
   margin-left: 56px;
 }
 
 .review_user-oberlo .review_user3 {
-  margin-top: 145px;
-  margin-left: 56px;
+  margin-left: 59px;
+} */
+
+/* ------------------ */
+.review-container {
+  /* height: 1500px; */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
+.cont-user {
+  padding: 0 10px;
+  width: 380px;
+  height: 200px;
+  background-color: #ffffff;
+  position: relative;
+  margin-top: 80px;
+  box-shadow: 0 0 15px 3px rgb(66 71 76 / 20%);
+  /* margin-top: 200px; */
+}
+
+.cont-user img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 30px;
+}
+
+.cont-user p {
+  margin-top: 30px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: #6b7177;
+}
+
+.cont-user .img-user1 {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  border-radius: 50px;
+  margin-top: 30px;
+  z-index: 10;
+}
+.cont-user .cont-user3 {
+  margin-top: 12px;
+}
+
+.cont-user::after {
+  content: "Jorge Robinson";
+  display: block;
+  text-align: center;
+  line-height: 150px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  background-color: #008060;
+  right: 0;
+  left: 0;
+  bottom: -150px;
+  height: 150px;
+  z-index: -1;
+}
+.reviwe-container-user2::after {
+  content: "33 Things";
+  display: block;
+  text-align: center;
+  line-height: 150px;
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  background-color: #008060;
+  right: 0;
+  left: 0;
+  bottom: -150px;
+  height: 150px;
+  z-index: -1;
+}
+.reviwe-container-user3::after {
+  content: "Lestian Atmopawiro";
+  display: block;
+  text-align: center;
+  line-height: 150px;
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  background-color: #008060;
+  right: 0;
+  left: 0;
+  bottom: -150px;
+  height: 150px;
+  z-index: -1;
+}
+
+/* -----------marketing------------------ */
 
 .marketing {
   width: 100%;
-  height: 728px;
+  min-height: 728px;
 }
 .marketing .img_operate .img_operate-size {
   width: 694px;
-  height: 480px;
+  min-height: 480px;
 }
 
 .marketing .list_menu2 .marketing_menu {
@@ -396,17 +490,17 @@ html {
 }
 
 .marketing .menu_oberlo .list_menu-oberlo1 .maketing_menu-list {
-  margin-left: -50px;
+  /* margin-left: -50px; */
 }
 
 .star {
   width: 100%;
-  height: 555px;
+  min-height: 200px;
   background-color: #f5f6fa;
 }
 .star .star_play {
   text-align: center;
-  padding-top: 96px;
+  padding-top: 46px;
 }
 
 .star .star_your {
@@ -461,7 +555,7 @@ html {
   line-height: 74px;
 }
 #footer .footer_store {
-  height: 284px;
+  min-height: 284px;
   border-bottom: 1px solid #6b71773d;
   position: relative;
 }
@@ -602,4 +696,43 @@ li {
 .service .list_service-2:hover {
   color: #ffffff;
   cursor: pointer;
+}
+
+.title-list1 {
+  font-size: 18px;
+}
+.sub-title-list1 {
+  font-size: 16px;
+  margin-bottom: 45px;
+}
+.title-list2 {
+  font-size: 18px;
+  /* transform: translateX(18px); */
+}
+.sub-title-list2 {
+  font-size: 16px;
+  margin-bottom: 45px;
+}
+.operate-market {
+  display: flex;
+  padding-left: 74px;
+}
+.list1_oberla {
+  padding: 0 18px;
+}
+.list_oberla1 {
+  padding: 0 18px;
+}
+.style-list2 {
+  padding: 0 18px;
+}
+.title-list1,
+.title-list2 {
+  margin-bottom: 12px;
+}
+.title-list-sub {
+  padding: 0 18px;
+}
+.markeing-operate {
+  margin: 164px 0;
 }
