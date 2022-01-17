@@ -235,7 +235,7 @@ html {
 }
 
 .review {
-  background-image: url(/asset/img/backgroubd.jpg);
+  background-image: url(./img/backgroubd.jpg);
   height: 848px;
   border-bottom: 1px solid #d2d5d9;
   background-size: cover;
